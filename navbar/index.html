@@ -7,8 +7,16 @@
 </head>
 <body>
     <div class="topnav">
-        <a class="active" href="https://bloohacked.github.io/truenet" target="_top">Home</a>
-        <a href="https://bloohacked.github.io/truenet/colson-status" target="_top">colson status</a>
+        <a class = "" href="https://bloohacked.github.io/truenet" target="_top" id="home">Home</a>
+        <a class = "" href="https://bloohacked.github.io/truenet/colson-status" target="_top" id="colson">colson status</a>
     </div>
+    <script>
+        var elems = [document.getElementById("home"), document.getElementById("colson")];
+        for (let i = 0; i < elems.length; i++) { 
+            if(elems[i].href==window.parent.location.href){
+                elems[i].class = "active";
+            }
+        }
+    </script>
 </body>
 </html>

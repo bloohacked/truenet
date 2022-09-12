@@ -1,3 +1,15 @@
+html,body {padding:0; margin:0;}
+
+p{
+margin-left: 8px;
+}
+
+iframe{
+  margin:0;
+  width: 100vw;
+  height: 48px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;

@@ -1,6 +1,18 @@
 <html>
 <body>
-<iframe loading="lazy" src="https://bloohacked.github.io/truenet/navbar/" name="iFrame Name" scrolling="No" height="48px" width="10000px" style="border: none;"></iframe>
+<script type="text/javascript">
+  function iframeLoaded() {
+      var iFrameID = document.getElementById('idIframe');
+      if(iFrameID) {
+            // here you can make the height, I delete it first, then I make it again
+            iFrameID.height = "";
+            iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+            iFrameID.width = "";
+            iFrameID.width = iFrameID.contentWindow.document.body.scrollWidth + "px";
+      }   
+  }
+</script>
+<iframe loading="lazy" src="https://bloohacked.github.io/truenet/navbar/" name="iFrame Name" scrolling="No" onload="iframeLoaded"></iframe>
 <p>this page is subject to change</p>
 </body>
 </html>
